@@ -117,11 +117,21 @@ public class GrpcExecutionsStub extends ExecutionsStub {
         ExecutionsStubSettings.newBuilder().build(), clientContext, callableFactory);
   }
 
+  /**
+   * Constructs an instance of GrpcExecutionsStub, using the given settings. This is protected so
+   * that it is easy to make a subclass, but otherwise, the static factory methods should be
+   * preferred.
+   */
   protected GrpcExecutionsStub(ExecutionsStubSettings settings, ClientContext clientContext)
       throws IOException {
     this(settings, clientContext, new GrpcExecutionsCallableFactory());
   }
 
+  /**
+   * Constructs an instance of GrpcExecutionsStub, using the given settings. This is protected so
+   * that it is easy to make a subclass, but otherwise, the static factory methods should be
+   * preferred.
+   */
   protected GrpcExecutionsStub(
       ExecutionsStubSettings settings,
       ClientContext clientContext,

@@ -22,7 +22,14 @@ import static io.grpc.stub.ClientCalls.futureUnaryCall;
 import static io.grpc.stub.ServerCalls.asyncUnaryCall;
 import static io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall;
 
-/** */
+/**
+ *
+ *
+ * <pre>
+ * Executions is used to start and manage running instances of
+ * [Workflows][google.cloud.workflows.v1beta.Workflow] called executions.
+ * </pre>
+ */
 @javax.annotation.Generated(
     value = "by gRPC proto compiler",
     comments = "Source: google/cloud/workflows/executions/v1beta/executions.proto")
@@ -259,10 +266,26 @@ public final class ExecutionsGrpc {
     return ExecutionsFutureStub.newStub(factory, channel);
   }
 
-  /** */
+  /**
+   *
+   *
+   * <pre>
+   * Executions is used to start and manage running instances of
+   * [Workflows][google.cloud.workflows.v1beta.Workflow] called executions.
+   * </pre>
+   */
   public abstract static class ExecutionsImplBase implements io.grpc.BindableService {
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Returns a list of executions which belong to the workflow with
+     * the given name. The method returns executions of all workflow
+     * revisions. Returned executions are ordered by their start time (newest
+     * first).
+     * </pre>
+     */
     public void listExecutions(
         com.google.cloud.workflows.executions.v1beta.ListExecutionsRequest request,
         io.grpc.stub.StreamObserver<
@@ -271,7 +294,13 @@ public final class ExecutionsGrpc {
       asyncUnimplementedUnaryCall(getListExecutionsMethod(), responseObserver);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Creates a new execution using the latest revision of the given workflow.
+     * </pre>
+     */
     public void createExecution(
         com.google.cloud.workflows.executions.v1beta.CreateExecutionRequest request,
         io.grpc.stub.StreamObserver<com.google.cloud.workflows.executions.v1beta.Execution>
@@ -279,7 +308,13 @@ public final class ExecutionsGrpc {
       asyncUnimplementedUnaryCall(getCreateExecutionMethod(), responseObserver);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Returns an execution of the given name.
+     * </pre>
+     */
     public void getExecution(
         com.google.cloud.workflows.executions.v1beta.GetExecutionRequest request,
         io.grpc.stub.StreamObserver<com.google.cloud.workflows.executions.v1beta.Execution>
@@ -287,7 +322,13 @@ public final class ExecutionsGrpc {
       asyncUnimplementedUnaryCall(getGetExecutionMethod(), responseObserver);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Cancels an execution of the given name.
+     * </pre>
+     */
     public void cancelExecution(
         com.google.cloud.workflows.executions.v1beta.CancelExecutionRequest request,
         io.grpc.stub.StreamObserver<com.google.cloud.workflows.executions.v1beta.Execution>
@@ -330,7 +371,14 @@ public final class ExecutionsGrpc {
     }
   }
 
-  /** */
+  /**
+   *
+   *
+   * <pre>
+   * Executions is used to start and manage running instances of
+   * [Workflows][google.cloud.workflows.v1beta.Workflow] called executions.
+   * </pre>
+   */
   public static final class ExecutionsStub extends io.grpc.stub.AbstractAsyncStub<ExecutionsStub> {
     private ExecutionsStub(io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
       super(channel, callOptions);
@@ -341,7 +389,16 @@ public final class ExecutionsGrpc {
       return new ExecutionsStub(channel, callOptions);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Returns a list of executions which belong to the workflow with
+     * the given name. The method returns executions of all workflow
+     * revisions. Returned executions are ordered by their start time (newest
+     * first).
+     * </pre>
+     */
     public void listExecutions(
         com.google.cloud.workflows.executions.v1beta.ListExecutionsRequest request,
         io.grpc.stub.StreamObserver<
@@ -353,7 +410,13 @@ public final class ExecutionsGrpc {
           responseObserver);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Creates a new execution using the latest revision of the given workflow.
+     * </pre>
+     */
     public void createExecution(
         com.google.cloud.workflows.executions.v1beta.CreateExecutionRequest request,
         io.grpc.stub.StreamObserver<com.google.cloud.workflows.executions.v1beta.Execution>
@@ -364,7 +427,13 @@ public final class ExecutionsGrpc {
           responseObserver);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Returns an execution of the given name.
+     * </pre>
+     */
     public void getExecution(
         com.google.cloud.workflows.executions.v1beta.GetExecutionRequest request,
         io.grpc.stub.StreamObserver<com.google.cloud.workflows.executions.v1beta.Execution>
@@ -375,7 +444,13 @@ public final class ExecutionsGrpc {
           responseObserver);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Cancels an execution of the given name.
+     * </pre>
+     */
     public void cancelExecution(
         com.google.cloud.workflows.executions.v1beta.CancelExecutionRequest request,
         io.grpc.stub.StreamObserver<com.google.cloud.workflows.executions.v1beta.Execution>
@@ -387,7 +462,14 @@ public final class ExecutionsGrpc {
     }
   }
 
-  /** */
+  /**
+   *
+   *
+   * <pre>
+   * Executions is used to start and manage running instances of
+   * [Workflows][google.cloud.workflows.v1beta.Workflow] called executions.
+   * </pre>
+   */
   public static final class ExecutionsBlockingStub
       extends io.grpc.stub.AbstractBlockingStub<ExecutionsBlockingStub> {
     private ExecutionsBlockingStub(io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
@@ -400,32 +482,66 @@ public final class ExecutionsGrpc {
       return new ExecutionsBlockingStub(channel, callOptions);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Returns a list of executions which belong to the workflow with
+     * the given name. The method returns executions of all workflow
+     * revisions. Returned executions are ordered by their start time (newest
+     * first).
+     * </pre>
+     */
     public com.google.cloud.workflows.executions.v1beta.ListExecutionsResponse listExecutions(
         com.google.cloud.workflows.executions.v1beta.ListExecutionsRequest request) {
       return blockingUnaryCall(getChannel(), getListExecutionsMethod(), getCallOptions(), request);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Creates a new execution using the latest revision of the given workflow.
+     * </pre>
+     */
     public com.google.cloud.workflows.executions.v1beta.Execution createExecution(
         com.google.cloud.workflows.executions.v1beta.CreateExecutionRequest request) {
       return blockingUnaryCall(getChannel(), getCreateExecutionMethod(), getCallOptions(), request);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Returns an execution of the given name.
+     * </pre>
+     */
     public com.google.cloud.workflows.executions.v1beta.Execution getExecution(
         com.google.cloud.workflows.executions.v1beta.GetExecutionRequest request) {
       return blockingUnaryCall(getChannel(), getGetExecutionMethod(), getCallOptions(), request);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Cancels an execution of the given name.
+     * </pre>
+     */
     public com.google.cloud.workflows.executions.v1beta.Execution cancelExecution(
         com.google.cloud.workflows.executions.v1beta.CancelExecutionRequest request) {
       return blockingUnaryCall(getChannel(), getCancelExecutionMethod(), getCallOptions(), request);
     }
   }
 
-  /** */
+  /**
+   *
+   *
+   * <pre>
+   * Executions is used to start and manage running instances of
+   * [Workflows][google.cloud.workflows.v1beta.Workflow] called executions.
+   * </pre>
+   */
   public static final class ExecutionsFutureStub
       extends io.grpc.stub.AbstractFutureStub<ExecutionsFutureStub> {
     private ExecutionsFutureStub(io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
@@ -437,7 +553,16 @@ public final class ExecutionsGrpc {
       return new ExecutionsFutureStub(channel, callOptions);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Returns a list of executions which belong to the workflow with
+     * the given name. The method returns executions of all workflow
+     * revisions. Returned executions are ordered by their start time (newest
+     * first).
+     * </pre>
+     */
     public com.google.common.util.concurrent.ListenableFuture<
             com.google.cloud.workflows.executions.v1beta.ListExecutionsResponse>
         listExecutions(com.google.cloud.workflows.executions.v1beta.ListExecutionsRequest request) {
@@ -445,7 +570,13 @@ public final class ExecutionsGrpc {
           getChannel().newCall(getListExecutionsMethod(), getCallOptions()), request);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Creates a new execution using the latest revision of the given workflow.
+     * </pre>
+     */
     public com.google.common.util.concurrent.ListenableFuture<
             com.google.cloud.workflows.executions.v1beta.Execution>
         createExecution(
@@ -454,7 +585,13 @@ public final class ExecutionsGrpc {
           getChannel().newCall(getCreateExecutionMethod(), getCallOptions()), request);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Returns an execution of the given name.
+     * </pre>
+     */
     public com.google.common.util.concurrent.ListenableFuture<
             com.google.cloud.workflows.executions.v1beta.Execution>
         getExecution(com.google.cloud.workflows.executions.v1beta.GetExecutionRequest request) {
@@ -462,7 +599,13 @@ public final class ExecutionsGrpc {
           getChannel().newCall(getGetExecutionMethod(), getCallOptions()), request);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Cancels an execution of the given name.
+     * </pre>
+     */
     public com.google.common.util.concurrent.ListenableFuture<
             com.google.cloud.workflows.executions.v1beta.Execution>
         cancelExecution(

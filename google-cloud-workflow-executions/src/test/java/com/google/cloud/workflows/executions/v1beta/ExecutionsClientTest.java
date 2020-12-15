@@ -177,7 +177,7 @@ public class ExecutionsClientTest {
             .setEndTime(Timestamp.newBuilder().build())
             .setArgument("argument-1589682499")
             .setResult("result-934426595")
-            .setWorkflowRevisionId("workflow_revision_id-1453295745")
+            .setWorkflowRevisionId("workflowRevisionId-1575712907")
             .build();
     mockExecutions.addResponse(expectedResponse);
 
@@ -224,7 +224,7 @@ public class ExecutionsClientTest {
             .setEndTime(Timestamp.newBuilder().build())
             .setArgument("argument-1589682499")
             .setResult("result-934426595")
-            .setWorkflowRevisionId("workflow_revision_id-1453295745")
+            .setWorkflowRevisionId("workflowRevisionId-1575712907")
             .build();
     mockExecutions.addResponse(expectedResponse);
 
@@ -271,7 +271,7 @@ public class ExecutionsClientTest {
             .setEndTime(Timestamp.newBuilder().build())
             .setArgument("argument-1589682499")
             .setResult("result-934426595")
-            .setWorkflowRevisionId("workflow_revision_id-1453295745")
+            .setWorkflowRevisionId("workflowRevisionId-1575712907")
             .build();
     mockExecutions.addResponse(expectedResponse);
 
@@ -315,7 +315,7 @@ public class ExecutionsClientTest {
             .setEndTime(Timestamp.newBuilder().build())
             .setArgument("argument-1589682499")
             .setResult("result-934426595")
-            .setWorkflowRevisionId("workflow_revision_id-1453295745")
+            .setWorkflowRevisionId("workflowRevisionId-1575712907")
             .build();
     mockExecutions.addResponse(expectedResponse);
 
@@ -359,7 +359,7 @@ public class ExecutionsClientTest {
             .setEndTime(Timestamp.newBuilder().build())
             .setArgument("argument-1589682499")
             .setResult("result-934426595")
-            .setWorkflowRevisionId("workflow_revision_id-1453295745")
+            .setWorkflowRevisionId("workflowRevisionId-1575712907")
             .build();
     mockExecutions.addResponse(expectedResponse);
 
@@ -403,7 +403,7 @@ public class ExecutionsClientTest {
             .setEndTime(Timestamp.newBuilder().build())
             .setArgument("argument-1589682499")
             .setResult("result-934426595")
-            .setWorkflowRevisionId("workflow_revision_id-1453295745")
+            .setWorkflowRevisionId("workflowRevisionId-1575712907")
             .build();
     mockExecutions.addResponse(expectedResponse);
 

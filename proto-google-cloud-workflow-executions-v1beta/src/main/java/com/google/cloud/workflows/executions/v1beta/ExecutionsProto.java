@@ -65,8 +65,7 @@ public final class ExecutionsProto {
   static {
     java.lang.String[] descriptorData = {
       "\n"
-          + "9google/cloud/workflows/executions/v1beta/executions.proto\022(google.cloud.workfl"
-          + "ows.executions.v1beta\032\034google/api/annotations.proto\032\027google/api/client.proto\032\037google/api/field_behavior.proto\032\031google/api/resource.proto\032\037google/protobuf/timestamp.proto\"\370\004\n"
+          + "9google/cloud/workflows/executions/v1beta/executions.proto\022(google.cloud.workflows.executions.v1beta\032\034google/api/annotations.proto\032\027google/api/client.proto\032\037google/api/field_behavior.proto\032\031google/api/resource.proto\032\037google/protobuf/timestamp.proto\"\370\004\n"
           + "\tExecution\022\021\n"
           + "\004name\030\001 \001(\tB\003\340A\003\0223\n\n"
           + "start_time\030\002 \001(\0132\032.google.protobuf.TimestampB\003\340A\003\0221\n"
@@ -124,8 +123,7 @@ public final class ExecutionsProto {
           + "\texecution\332A\020parent,execution\022\321\001\n"
           + "\014GetExecution\022=.google.cloud.workflows.executions.v1beta.GetExecutionRequest\0323.google.cloud.workflows.executions.v1beta.Execution\"M\202\323\344\223\002@\022>/v1beta/{name=projects/*/locations/*/workflows/*/executions/*}\332A\004name\022\341\001\n"
           + "\017CancelExecution\022@.google.cloud.workflows.executions.v1beta.CancelExecutionR"
-          + "equest\0323.google.cloud.workflows.executio"
-          + "ns.v1beta.Execution\"W\202\323\344\223\002J\"E/v1beta/{name=projects/*/locations/*/workflows/*/executions/*}:cancel:\001*\332A\004name\032U\312A!workflowexecutions.googleapis.com\322A.https://www.googleapis.com/auth/cloud-platformB\371\001\n"
+          + "equest\0323.google.cloud.workflows.executions.v1beta.Execution\"W\202\323\344\223\002J\"E/v1beta/{name=projects/*/locations/*/workflows/*/executions/*}:cancel:\001*\332A\004name\032U\312A!workflowexecutions.googleapis.com\322A.https://www.googleapis.com/auth/cloud-platformB\371\001\n"
           + ",com.google.cloud.workflows.executions.v1betaB\017ExecutionsProtoP\001ZRgoogle.golang.org/genproto/googleapis/cloud/workflows/executions/v1beta;executions\352Aa\n"
           + "!workflows.googleapis.com/Workflow\022<projects/{pro"
           + "ject}/locations/{location}/workflows/{workflow}b\006proto3"

@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.3.6](https://github.com/googleapis/java-workflow-executions/compare/v2.3.5...v2.3.6) (2022-10-05)
+
+
+### Bug Fixes
+
+* update protobuf to v3.21.7 ([cd54641](https://github.com/googleapis/java-workflow-executions/commit/cd54641b0b9b75de0fcd233c509f0d5184945093))
+
 ## [2.3.5](https://github.com/googleapis/java-workflow-executions/compare/v2.3.4...v2.3.5) (2022-10-03)
 
 
